@@ -1,8 +1,8 @@
 "use client";
 
+import { motion, type Variants } from "framer-motion";
 import { paths } from "@/config/paths";
 import { Link } from "@/i18n/navigation";
-import { motion, type Variants } from "framer-motion";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },

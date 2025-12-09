@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { paths } from "@/config/paths";
-import { ServiceItem } from "./ServiceItem";
 import { Link } from "@/i18n/navigation";
+import { ServiceItem } from "./ServiceItem";
 
 export const OUR_SERVICES = [
   {

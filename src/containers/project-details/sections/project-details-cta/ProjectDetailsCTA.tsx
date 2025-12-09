@@ -1,10 +1,10 @@
 "use client";
 
+import { Button } from "@heroui/button";
+import type { Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { paths } from "@/config/paths";
 import { Link } from "@/i18n/navigation";
-import { Button } from "@heroui/button";
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 30 },

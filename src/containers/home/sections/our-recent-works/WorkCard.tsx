@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { paths } from "@/config/paths";
 import { Link } from "@/i18n/navigation";
-import Image from "next/image";
 
 interface WorkCardProps {
   title: string;

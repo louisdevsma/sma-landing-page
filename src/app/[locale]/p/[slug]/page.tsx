@@ -25,9 +25,7 @@ export async function generateMetadata({
     .join(" ");
 
   const title =
-    locale === "vi"
-      ? `${projectTitle} - Dự Án`
-      : `${projectTitle} - Project`;
+    locale === "vi" ? `${projectTitle} - Dự Án` : `${projectTitle} - Project`;
   const description =
     locale === "vi"
       ? `Chi tiết về dự án ${projectTitle}. Xem cách chúng tôi tạo ra giải pháp sáng tạo và hiệu quả cho khách hàng.`

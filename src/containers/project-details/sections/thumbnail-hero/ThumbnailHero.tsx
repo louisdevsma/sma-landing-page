@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 interface ThumbnailHeroProps {
   title: string;
@@ -8,7 +8,7 @@ interface ThumbnailHeroProps {
   category: string;
 }
 
-const categoryVariants = {
+const categoryVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
   visible: {
     opacity: 1,
@@ -20,7 +20,7 @@ const categoryVariants = {
   },
 };
 
-const titleVariants = {
+const titleVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
@@ -33,7 +33,7 @@ const titleVariants = {
   },
 };
 
-const imageVariants = {
+const imageVariants: Variants = {
   hidden: { opacity: 0, scale: 0.95, y: 40 },
   visible: {
     opacity: 1,

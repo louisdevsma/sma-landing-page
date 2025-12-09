@@ -2,8 +2,8 @@
 
 import type React from "react";
 import type { ReactNode } from "react";
-import { onScrollToTarget } from "@/utils/scroll-to-target";
 import { Link } from "@/i18n/navigation";
+import { onScrollToTarget } from "@/utils/scroll-to-target";
 
 type SmoothScrollLinkProps = {
   href: string;

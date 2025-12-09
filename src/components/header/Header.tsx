@@ -10,14 +10,13 @@ import {
   NavbarMenuToggle,
 } from "@heroui/navbar";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { type CSSProperties, useCallback, useMemo, useState } from "react";
 import { images } from "@/config/images";
 import { paths } from "@/config/paths";
+import { Link, usePathname } from "@/i18n/navigation";
 import { SmoothScrollLink } from "../animate";
 import { LocaleSwitcher } from "../locale-switcher";
 import { ServicesSelection } from "../services-selection";
-import { Link } from "@/i18n/navigation";
 
 type MenuItem = {
   label: string;
