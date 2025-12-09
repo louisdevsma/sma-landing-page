@@ -1,0 +1,122 @@
+/* @import "./fonts.css"; */
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/free-mode";
+@config "../../tailwind.config.js";
+
+@theme {
+  --font-space-grotesk: "Space Grotesk", system-ui, sans-serif;
+
+  --color-primary: #2e6dff;
+  --color-secondary: #00ffff;
+  --color-default: #1a1a2e;
+  --color-default-foreground: #ffffff;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #0a0e1a;
+  --color-muted-foreground: #9d9db9;
+  --color-muted: #a0a0a0;
+  --color-muted-light: #e0e0e0;
+
+  --radius-DEFAULT: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  --navbar-height: 5.25rem;
+}
+
+@custom-variant xs (@media (min-width: 0rem)); /* 0px */
+@custom-variant sm (@media (min-width: 36.063rem)); /* 576px */
+@custom-variant md (@media (min-width: 48.063rem)); /* 769px */
+@custom-variant lg (@media (min-width: 64.063rem)); /* 993px */
+@custom-variant xl (@media (min-width: 75.063rem)); /* 1201px */
+@custom-variant xxl (@media (min-width: 87.563rem)); /* 1401px */
+
+@utility sma-container {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 44px;
+  width: 100%;
+
+  @media (max-width: 769px) {
+    padding: 0 36px;
+  }
+
+  @media (max-width: 577px) {
+    padding: 0 22px;
+  }
+}
+
+.animate {
+  opacity: 1 !important;
+
+  /* Tailwind transform CSS variables */
+  --tw-translate-x: 0 !important;
+  --tw-translate-y: 0 !important;
+  --tw-rotate: 0 !important;
+  --tw-skew-x: 0 !important;
+  --tw-skew-y: 0 !important;
+  --tw-scale-x: 1 !important;
+  --tw-scale-y: 1 !important;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border-card {
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.gradient-border-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-space-grotesk);
+}

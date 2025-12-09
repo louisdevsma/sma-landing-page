@@ -1,0 +1,29 @@
+/* Custom styles for Swiper */
+.services-swiper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.services-swiper > .swiper-slide__content {
+  position: absolute;
+  top: 0;
+}
+
+.services-swiper .swiper-slide {
+  height: 300px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scale(0.8) !important;
+  opacity: 0.3;
+  user-select: none;
+}
+
+.services-swiper .swiper-slide.swiper-slide-active {
+  transform: scale(1) !important;
+  opacity: 1;
+}
+.services-swiper .swiper-slide__content {
+  height: 300px;
+}

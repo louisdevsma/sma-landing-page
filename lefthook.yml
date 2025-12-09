@@ -1,0 +1,15 @@
+# Validate commit messages
+commit-msg:
+  commands:
+    commitlint:
+      run: npx --no -- commitlint --edit {1}
+
+pre-commit:
+  parallel: true
+  commands:
+    biome-format:
+      run: npx biome format --write .
+    biome-lint:
+      run: npx biome lint .
+    type-check:
+      run: npx tsc --noEmit
