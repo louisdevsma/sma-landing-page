@@ -1,4 +1,3 @@
-import { LocaleSwitcher } from "@/components";
 import {
   Hero,
   HomeCTA,

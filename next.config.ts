@@ -1,4 +1,4 @@
-import { NextConfig } from "next";
+import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin({
@@ -9,6 +9,9 @@ const withNextIntl = createNextIntlPlugin({
 
 const config: NextConfig = {
   productionBrowserSourceMaps: false,
+  experimental: {
+    globalNotFound: true,
+  },
   images: {
     remotePatterns: [
       {

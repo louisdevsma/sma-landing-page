@@ -10,11 +10,11 @@ import {
   NavbarMenuToggle,
 } from "@heroui/navbar";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { type CSSProperties, useCallback, useMemo, useState } from "react";
 import { images } from "@/config/images";
 import { paths } from "@/config/paths";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 import { SmoothScrollLink } from "../animate";
 import { LocaleSwitcher } from "../locale-switcher";
 import { ServicesSelection } from "../services-selection";
@@ -96,7 +96,7 @@ export const Header = () => {
         </Link>
       );
     },
-    [handleOpenServicesSelection, isHome]
+    [handleOpenServicesSelection, isHome],
   );
 
   return (

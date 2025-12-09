@@ -2,9 +2,8 @@
 
 import { Button } from "@heroui/button";
 import { motion } from "framer-motion";
-
-import { ScrollIndicator } from "../../components";
 import Link from "next/link";
+import { ScrollIndicator } from "../../components";
 
 const containerVariants = {
   hidden: { opacity: 0 },

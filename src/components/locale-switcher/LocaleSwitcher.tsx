@@ -2,9 +2,9 @@
 
 import { Button } from "@heroui/button";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 import { useTransition } from "react";
 import { images } from "@/config/images";
-import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 
 export const LocaleSwitcher = () => {

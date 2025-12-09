@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from "react";
 import "../../public/assets/css/fonts.css";
 import "./globals.css";
 

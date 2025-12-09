@@ -1,10 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import type React from "react";
 import type { ReactNode } from "react";
-
 import { onScrollToTarget } from "@/utils/scroll-to-target";
-import Link from "next/link";
 
 type SmoothScrollLinkProps = {
   href: string;
