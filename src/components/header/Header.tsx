@@ -89,6 +89,7 @@ export const Header = () => {
       return (
         <Link
           href={item.href}
+          onClick={() => setIsMenuOpen(false)}
           className="w-full text-muted-light hover:text-white text-sm font-medium leading-normal transition-colors"
         >
           {item.label}
@@ -179,15 +180,18 @@ export const Header = () => {
           className="p-3 md:p-5 bg-background-dark/20 w-[calc(100%-20px)] lg:max-w-[1200px] mx-auto rounded-t-lg"
         >
           <NavbarContent className="flex flex-col">
-            {menuItems.map((item, index) => (
-              <NavbarMenuItem
-                key={`${item}-${index}`}
-                isActive={index === 0}
-                className="relative data-[active=true]:text-white data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-[-4px] data-[active=true]:after:left-0 data-[active=true]:after:w-full data-[active=true]:after:h-[2px] data-[active=true]:after:bg-primary"
-              >
-                {renderMenuItemContent(item)}
-              </NavbarMenuItem>
-            ))}
+            {menuItems.map((item, index) => {
+              const isActive = pathname === item.href;
+              return (
+                <NavbarMenuItem
+                  key={`${item}-${index}`}
+                  isActive={isActive}
+                  className="relative data-[active=true]:text-white data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-[-4px] data-[active=true]:after:left-0 data-[active=true]:after:w-full data-[active=true]:after:h-[2px] data-[active=true]:after:bg-primary"
+                >
+                  {renderMenuItemContent(item)}
+                </NavbarMenuItem>
+              )
+            })}
           </NavbarContent>
 
           <NavbarItem>
