@@ -12,11 +12,10 @@ export async function generateMetadata({
   const baseUrl = envs.BASE_URL || "https://sma-solutions.com";
   const url = `${baseUrl}/${locale === "en" ? "" : locale}`;
 
+  const title = `${locale === "en" ? "Home" : "Trang Chủ"} | ${AppConfig.name}`;
+
   return {
-    title: {
-      default: locale === "en" ? "Home" : "Trang Chủ",
-      template: `%s | ${AppConfig.name}`,
-    },
+    title,
     description:
       locale === "vi"
         ? "Chúng tôi chuyên tạo ra các giải pháp web, mobile và cloud tùy chỉnh giúp thúc đẩy tăng trưởng và đổi mới cho doanh nghiệp của bạn."
@@ -43,7 +42,7 @@ export async function generateMetadata({
       locale: locale === "vi" ? "vi_VN" : "en_US",
       url,
       siteName: AppConfig.name,
-      title: AppConfig.name,
+      title,
       description:
         locale === "vi"
           ? "Chúng tôi chuyên tạo ra các giải pháp web, mobile và cloud tùy chỉnh giúp thúc đẩy tăng trưởng và đổi mới cho doanh nghiệp của bạn."
@@ -59,7 +58,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: AppConfig.name,
+      title,
       description:
         locale === "vi"
           ? "Chúng tôi chuyên tạo ra các giải pháp web, mobile và cloud tùy chỉnh giúp thúc đẩy tăng trưởng và đổi mới cho doanh nghiệp của bạn."
