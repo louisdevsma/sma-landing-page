@@ -2,10 +2,10 @@
 // See: https://next-intl.dev/docs/workflows/typescript#messages-arguments
 
 declare const messages: {
-  "NotFound": {
-    "title": "Page not found",
-    "description": "The page you are looking for does not exist.",
-    "returnHome": "Return home"
-  }
+  NotFound: {
+    title: "Page not found";
+    description: "The page you are looking for does not exist.";
+    returnHome: "Return home";
+  };
 };
 export default messages;

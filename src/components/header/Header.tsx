@@ -190,7 +190,7 @@ export const Header = () => {
                 >
                   {renderMenuItemContent(item)}
                 </NavbarMenuItem>
-              )
+              );
             })}
           </NavbarContent>
 
