@@ -57,7 +57,7 @@ const projects = [
     id: 1,
     title: "Project 1",
     url: images.projects.project_mockup_1,
-    slug: "/p/project-1",
+    slug: "/project-1",
     category: "Landing Page",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
@@ -66,7 +66,7 @@ const projects = [
     id: 2,
     title: "Project 2",
     url: images.projects.project_mockup_2,
-    slug: "/p/project-2",
+    slug: "/project-2",
     category: "E-commerce",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
@@ -75,7 +75,7 @@ const projects = [
     id: 3,
     title: "Project 3",
     url: images.projects.project_mockup_3,
-    slug: "/p/project-3",
+    slug: "/project-3",
     category: "Business Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
@@ -84,7 +84,7 @@ const projects = [
     id: 4,
     title: "Project 4",
     url: images.projects.project_mockup_4,
-    slug: "/p/project-4",
+    slug: "/project-4",
     category: "Web App",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
@@ -93,7 +93,7 @@ const projects = [
     id: 5,
     title: "Project 5",
     url: images.projects.project_mockup_5,
-    slug: "/p/project-5",
+    slug: "/project-5",
     category: "Design on demand",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
@@ -102,7 +102,7 @@ const projects = [
     id: 6,
     title: "Project 6",
     url: images.projects.project_mockup_6,
-    slug: "/p/project-6",
+    slug: "/project-6",
     category: "Landing Page",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
