@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { paths } from "@/config/paths";
 import { ServiceItem } from "./ServiceItem";
+import { Link } from "@/i18n/navigation";
 
 export const OUR_SERVICES = [
   {

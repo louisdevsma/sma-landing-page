@@ -1,6 +1,6 @@
 export const paths = {
   home: "/",
-  projects: "/projects",
+  projects: "/p",
   services: "/#services",
   pricing: "/pricing",
   privacy_policy: "/privacy-policy",

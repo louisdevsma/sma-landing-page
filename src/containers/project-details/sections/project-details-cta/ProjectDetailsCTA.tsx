@@ -1,9 +1,12 @@
 "use client";
 
+import { paths } from "@/config/paths";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@heroui/button";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
@@ -17,7 +20,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -53,13 +56,15 @@ export const ProjectDetailsCTA = () => {
         complexities of technology and build a solution that drives results.
       </motion.p>
       <motion.div variants={itemVariants}>
-        <Button
-          color="primary"
-          className="font-semibold transition-transform duration-300 hover:scale-105"
-          size="lg"
-        >
-          Start Your Project
-        </Button>
+        <Link href={paths.contact}>
+          <Button
+            color="primary"
+            className="font-semibold transition-transform duration-300 hover:scale-105"
+            size="lg"
+          >
+            Start Your Project
+          </Button>
+        </Link>
       </motion.div>
     </motion.section>
   );

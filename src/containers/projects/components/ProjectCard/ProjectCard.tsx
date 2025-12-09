@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { paths } from "@/config/paths";
+import { Link } from "@/i18n/navigation";
 
 interface ProjectCardProps {
   title: string;
@@ -28,7 +29,7 @@ export const ProjectCard = ({
         <div className="absolute inset-0 bg-black/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           <Link
             className="rounded-full bg-white/20 px-4 py-2 text-xs font-semibold text-white backdrop-blur-sm transition-all duration-300 max-md:bg-white/30 md:group-hover:bg-white/30"
-            href={slug}
+            href={`${paths.projects}${slug}`}
           >
             View Project
           </Link>

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { PricingFeature } from "../pricing-feature";
 
 interface PricingCardProps {
@@ -32,8 +33,27 @@ export const PricingCard = ({
 
   const buttonClassName =
     buttonVariant === "gradient"
-      ? "flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gradient-to-r from-blue-500 to-cyan-400 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
+      ? "flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-linear-to-r from-blue-500 to-cyan-400 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
       : "flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/10 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/20 transition-colors";
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.05,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.35 },
+    },
+  };
 
   return (
     <div className={cardClassName}>
@@ -41,7 +61,7 @@ export const PricingCard = ({
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-bold leading-tight text-white">{name}</h3>
           {isPopular && (
-            <p className="rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 px-3 py-1 text-xs font-medium leading-normal tracking-[0.015em] text-white">
+            <p className="rounded-full bg-linear-to-r from-primary to-secondary px-3 py-1 text-xs font-medium leading-normal tracking-[0.015em] text-white">
               Most Popular
             </p>
           )}
@@ -68,14 +88,21 @@ export const PricingCard = ({
           </p>
         )}
       </div>
-      <button type="button" className={`${buttonClassName} mt-auto`}>
+      <button type="button" className={`${buttonClassName}`}>
         <span className="truncate">{buttonText}</span>
       </button>
-      <div className="flex flex-col gap-3">
+      <motion.div
+        className="flex flex-col gap-3"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+      >
         {features.map((feature, index) => (
-          <PricingFeature key={index} feature={feature} />
+          <motion.div key={index} variants={itemVariants}>
+            <PricingFeature feature={feature} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

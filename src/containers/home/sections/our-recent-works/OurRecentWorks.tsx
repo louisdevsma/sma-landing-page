@@ -8,13 +8,13 @@ const OUR_RECENT_WORKS = [
     id: 1,
     title: "Fintech Platform",
     url: "https://lh3.googleusercontent.com/aida-public/AB6AXuA4iyUXElYd3eVIVYvTS255tLVkrYOtzDxOGLFnGAaDOE0SRYrYYjwQzdhT2FrCm_Dq2bYdS4_7Di1O_ww5Dzsu0bGQ0e5S98xbLnEQ19gesh3dEhFLY323-f0gTKUTZav2ph4HmQngErssdvIgjPLaN1zOrvGBbWCjwBASm5TFwbnQD5031DlxdgS2rVKAZiWgI3fYJHsAHz5Uk7M_ZQyHM5ZDIvx8S--a9UToPHSEvwsvrdhUJAn4ldErHzIWKc4oJShAazlstF_S",
-    slug: "/projects/fintech-platform",
+    slug: "/fintech-platform",
   },
   {
     id: 2,
     title: "E-commerce App",
     url: "https://lh3.googleusercontent.com/aida-public/AB6AXuChkBeFRKfMSjJLzX9LKqh-RG-mh2oG6G9iNpk8yhMw8hAX_8qXwUFiax1g77V4jrnJVjwF0jZjucqwZV1VoB2iozU8SCPmOv9vbrqGckf7aCH10DYWJwRS7_DXFLy6C3YL_exdZrXG85TSvDum_lbeUVQhyKxThmcvcAjIIJllM5tuxOSyKLYyJoZDiSpQxas3fe0pwWI7DB8IG-6RigCPBw6ercU2Ukx4hGXUz1C7VRvF4I1mybVVOJu7xsIUihQAWLTA-g2DLdhd",
-    slug: "/projects/e-commerce-app",
+    slug: "/e-commerce-app",
   },
 ];
 

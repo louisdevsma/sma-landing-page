@@ -50,7 +50,7 @@ export const ProjectDetails = () => {
           />
         </motion.div>
 
-        <motion.div variants={sectionVariants}>
+        <motion.div className="flex flex-col gap-8" variants={sectionVariants}>
           <ProjectInfos
             description="FinCorp Innovations faced significant scalability issues with their legacy monolithic system. It hindered their ability to rapidly deploy new features, integrate with third-party services, and handle peak user loads, which was critical for their growth in the competitive FinTech market."
             client="FinCorp Innovations"

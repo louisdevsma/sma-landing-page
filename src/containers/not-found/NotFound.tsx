@@ -1,7 +1,7 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
 import { Button } from "@heroui/button";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export const NotFound = () => {

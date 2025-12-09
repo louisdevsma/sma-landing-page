@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { paths } from "@/config/paths";
+import { Link } from "@/i18n/navigation";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 24 },

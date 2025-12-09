@@ -1,5 +1,7 @@
 "use client";
 
+import { paths } from "@/config/paths";
+import { Link } from "@/i18n/navigation";
 import { motion, type Variants } from "framer-motion";
 
 const containerVariants: Variants = {
@@ -86,7 +88,9 @@ export const HomeCTA = () => {
               whileHover="hover"
               whileTap="tap"
             >
-              <span className="truncate">Contact Us Now</span>
+              <Link href={paths.contact}>
+                <span className="truncate">Contact Us Now</span>
+              </Link>
             </motion.button>
           </motion.div>
         </motion.div>
